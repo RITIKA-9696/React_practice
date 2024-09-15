@@ -1,0 +1,30 @@
+.container {
+  list-style: none;
+  padding: 0;
+}
+
+/* .col {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc; 
+   width: 50px; 
+  margin-right: 10px;
+} */
+
+/* .col:focus {
+  outline: none;
+  border-color: #666;
+} */
+
+/* .col4 {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50px;
+  margin-right: 10px;
+} */
+
+/* .col4:focus {
+  outline: none;
+  border-color: #666;
+} */
