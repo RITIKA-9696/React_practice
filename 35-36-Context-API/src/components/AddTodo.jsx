@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { MdOutlineAdd } from "react-icons/md";
-
-function AddTodo({ onNewItem }) {
+import { TodoItemsContext } from "../store/todo-items-store";
+function AddTodo() {
+  const { addNewItem } = useContext(TodoItemsContext);
   const [todoName, setTodoName] = useState("");
   const [dueDate, setDueDate] = useState("");
 
@@ -13,7 +14,7 @@ function AddTodo({ onNewItem }) {
   };
 
   const handleAddButtonClicked = () => {
-    onNewItem(todoName, dueDate);
+    addNewItem(todoName, dueDate);
     setDueDate("");
     setTodoName("");
   };
@@ -23,7 +24,7 @@ function AddTodo({ onNewItem }) {
         <div className="col-6">
           <input
             type="text"
-            placeholder="Enter Todo here"
+            placeholder="Enter Todo Here"
             value={todoName}
             onChange={handleNameChange}
           />
